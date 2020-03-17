@@ -3,10 +3,10 @@ import { Card, CardTitle, CardText, Row, Col, Container } from 'reactstrap';
 
 const CovidData = (props) => {
   return (
-    <Row>
+    <Row style={{paddingBottom: "3px"}}>
     <Col sm={1} md ={2} lg={3} xl={4}>
-    <Card body style={{textAlign: "left"}}>
-      <CardTitle style={{textAlign: "center", letterSpacing: "2px", textTransform: "uppercase", fontWeight: "bold"}}><strong>{props.country}</strong></CardTitle>
+    <Card body style={{textAlign: "left", backgroundImage: "linear-gradient(to right, #9796f0 , #fbc7d4)", borderRadius: "5%"}}>
+      <CardTitle style={{textAlign: "center", letterSpacing: "2px", textTransform: "uppercase", fontWeight: "bold", color: "white"}}><strong>{props.country}</strong></CardTitle>
       <CardText><strong>Cases : </strong>{props.cases}</CardText>
       <CardText><strong>Today Cases : </strong>{props.todayCases}</CardText>
       <CardText><strong>Deaths : </strong>{props.deaths}</CardText>
