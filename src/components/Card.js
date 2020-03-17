@@ -5,7 +5,7 @@ const CovidData = (props) => {
   return (
     <Row style={{paddingBottom: "3px"}}>
     <Col sm={1} md ={2} lg={3} xl={4}>
-    <Card body style={{textAlign: "left", backgroundImage: "linear-gradient(to right, #9796f0 , #fbc7d4)", borderRadius: "5%"}}>
+    <Card body style={{textAlign: "left", backgroundImage: "linear-gradient(to right, #1c92d2 , #f2fcfe)", borderRadius: "5%", borderColor: "white"}}>
       <CardTitle style={{textAlign: "center", letterSpacing: "2px", textTransform: "uppercase", fontWeight: "bold", color: "white"}}><strong>{props.country}</strong></CardTitle>
       <CardText><strong>Cases : </strong>{props.cases}</CardText>
       <CardText><strong>Today Cases : </strong>{props.todayCases}</CardText>

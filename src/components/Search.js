@@ -8,7 +8,7 @@ class Search extends Component {
                 <Container>
                 <Form inline>
                     <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                        <Input type="text" name="email" id="country" placeholder="Search By Country" />
+                        <Input type="text" name="country" id="country" placeholder="Search By Country" />
                     </FormGroup>
                 </Form>
                 </Container>
