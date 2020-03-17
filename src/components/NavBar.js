@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand>COVID-19 TRENDS</NavbarBrand>
+        <NavbarBrand>COVID-19 TRENDS<br/><div style={{fontSize: "12px"}}>Interface By Satyam Naithani</div></NavbarBrand>
         <Search />
 
       </Navbar>
