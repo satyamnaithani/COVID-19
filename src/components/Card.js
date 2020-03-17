@@ -3,7 +3,7 @@ import { Card, CardTitle, CardText, Row, Col, Container } from 'reactstrap';
 
 const CovidData = (props) => {
   return (
-      <Row xs="6" sm="4">
+      <Row>
     
       <Col >
         <Card body>
