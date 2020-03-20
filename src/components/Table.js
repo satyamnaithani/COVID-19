@@ -37,9 +37,6 @@ export default class CardCovid extends React.Component {
 
   render() {
     return (
-
-     
-
       <CovidData key={this.props.country}
         country={this.props.country}
         cases={this.props.cases}

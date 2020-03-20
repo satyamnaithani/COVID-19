@@ -1,5 +1,5 @@
 import React from 'react';
-import CardCovid from './Card';
+import CardCovid from './Table';
 import {Container, Table} from 'reactstrap'
 
 export default class CovidData extends React.Component {
