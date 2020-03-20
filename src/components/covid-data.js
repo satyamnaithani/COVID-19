@@ -1,5 +1,6 @@
 import React from 'react';
 import CardCovid from './Card';
+import {Container, Table} from 'reactstrap'
 
 export default class CovidData extends React.Component {
     constructor(props) {
@@ -41,7 +42,22 @@ export default class CovidData extends React.Component {
         return <div>Loading...</div>;
       } else {
         return (
-          <ul>
+
+
+          <Container>
+
+          <Table bordered>
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Today Cases</th>
+                <th>Total Deaths</th>
+                <th>Today Deaths</th>
+                <th>Recovered</th>
+                <th>Critical</th>
+              </tr>
+            </thead>
             {items.map(item => (
               <CardCovid key={item.country} 
                          country={item.country} 
@@ -54,7 +70,12 @@ export default class CovidData extends React.Component {
                          />
 
             ))}
-          </ul>
+          </Table>
+  
+        </Container>
+          
+            
+          
         );
       }
     }

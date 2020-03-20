@@ -3,6 +3,7 @@ import CovidData from './components/covid-data';
 import NavBar from './components/NavBar'
 import './App.css';
 
+
 class App extends React.Component {
   render() {
     return (
