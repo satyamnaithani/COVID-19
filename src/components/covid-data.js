@@ -2,6 +2,7 @@ import React from 'react';
 import CardCovid from './Table';
 import {Container, Table} from 'reactstrap'
 
+
 export default class CovidData extends React.Component {
     constructor(props) {
       super(props);
@@ -41,14 +42,18 @@ export default class CovidData extends React.Component {
       } else if (!isLoaded) {
         return <div>Loading...</div>;
       } else {
+        var i = 0;
         return (
+          
 
 
           <Container>
 
-          <Table bordered>
+          
+            <Table bordered size="sm" hover responsive>
             <thead>
               <tr>
+                <th>Rank</th>
                 <th>Country</th>
                 <th>Total Cases</th>
                 <th>Today Cases</th>
@@ -59,7 +64,8 @@ export default class CovidData extends React.Component {
               </tr>
             </thead>
             {items.map(item => (
-              <CardCovid key={item.country} 
+              <CardCovid key={item.country}
+                         rank={++i}
                          country={item.country} 
                          cases={item.cases} 
                          todayCases={item.todayCases}
@@ -71,6 +77,9 @@ export default class CovidData extends React.Component {
 
             ))}
           </Table>
+          
+
+
   
         </Container>
           

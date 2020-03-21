@@ -2,6 +2,7 @@ import React from 'react'
 
 
 const CovidData = (props) => {
+  
   return (
     //   <Row style={{paddingBottom: "3px", paddingTop: "3px"}}>
     //   <Col sm={1} md ={2} lg={3} xl={4}>
@@ -18,8 +19,10 @@ const CovidData = (props) => {
     // </Col>
     // </Row>
 
+
     <tbody>
       <tr>
+      <th scope="row">{props.rank}</th>
         <th scope="row">{props.country}</th>
         <td>{props.cases}</td>
         <td>{props.todayCases}</td>
@@ -38,6 +41,7 @@ export default class CardCovid extends React.Component {
   render() {
     return (
       <CovidData key={this.props.country}
+        rank ={this.props.rank}
         country={this.props.country}
         cases={this.props.cases}
         todayCases={this.props.todayCases}
