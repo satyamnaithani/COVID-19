@@ -15,25 +15,30 @@ function MyChart() {
       ],
       []
     )
+
+    const series = React.useMemo(
+        () => ({
+          showPoints: false
+        }),
+        []
+      )
    
     const axes = React.useMemo(
       () => [
-        { primary: true, type: 'linear', position: 'bottom' },
-        { type: 'linear', position: 'left' }
+        { primary: true, type: 'time', position: 'bottom' },
+      { type: 'linear', position: 'left' }
       ],
       []
     )
    
     return (
-      // A react-chart hyper-responsively and continuusly fills the available
-      // space of its parent element automatically
       <div
         style={{
           width: '400px',
           height: '300px'
         }}
       >
-        <Chart data={data} axes={axes} />
+        <Chart data={data} axes={axes} series={series} tooltip/>
       </div>
     )
   }
