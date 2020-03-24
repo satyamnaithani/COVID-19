@@ -23,7 +23,9 @@ const CovidData = (props) => {
     <tbody>
       <tr>
       <th scope="row">{props.rank}</th>
-        <th scope="row">{props.country}</th>
+      {/* <img src={props.flag} alt="flag" height="20px" width="40px"/>{' '} */}
+      
+  <th scope="row">{props.country}</th>
         <td>{props.cases}</td>
         <td>{props.todayCases}</td>
         <td>{props.deaths}</td>
@@ -43,6 +45,7 @@ export default class CardCovid extends React.Component {
       <CovidData key={this.props.country}
         rank ={this.props.rank}
         country={this.props.country}
+        flag={this.props.flag}
         cases={this.props.cases}
         todayCases={this.props.todayCases}
         deaths={this.props.deaths}

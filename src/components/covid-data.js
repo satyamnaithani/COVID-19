@@ -50,7 +50,7 @@ export default class CovidData extends React.Component {
           <Container>
 
           
-            <Table bordered size="sm" hover responsive>
+            <Table bordered size="sm" hover>
             <thead>
               <tr>
                 <th>Rank</th>
@@ -66,6 +66,7 @@ export default class CovidData extends React.Component {
             {items.map(item => (
               <CardCovid key={item.country}
                          rank={++i}
+                         flag={item.countryInfo.flag}
                          country={item.country} 
                          cases={item.cases} 
                          todayCases={item.todayCases}
