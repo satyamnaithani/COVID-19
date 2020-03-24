@@ -21,15 +21,15 @@ const CovidData = (props) => {
 
 
     <tbody>
-      <tr>
+      <tr style={{fontWeight: "600"}}>
       <th scope="row">{props.rank}</th>
       {/* <img src={props.flag} alt="flag" height="20px" width="40px"/>{' '} */}
       
   <th scope="row">{props.country}</th>
         <td>{props.cases}</td>
-        <td>{props.todayCases}</td>
+        <td><span style={{color: "#CCCC00"}}>+{props.todayCases}</span></td>
         <td>{props.deaths}</td>
-        <td>{props.todayDeaths}</td>
+        <td><span style={{color: "red"}}>+{props.todayDeaths}</span></td>
         <td>{props.recovered}</td>
         <td>{props.critical}</td>
       </tr>

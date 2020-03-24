@@ -2,6 +2,7 @@ import React  from 'react';
 import {
   Navbar,
   NavbarBrand,
+  Container,
 
 } from 'reactstrap';
 
@@ -52,10 +53,14 @@ import Search from './Search'
       <Search />
 
         </Navbar>
-        <div>Last Updated: {date.toString()}</div>
-      <div>Total Cases: <span style={{color: "	#CCCC00", fontWeight:"bold"}}>{items.cases}</span></div>
-  <div>Total Deaths: <span style={{color: "red", fontWeight:"bold"}}>{items.deaths}</span></div>
-      <div>Total Recovered: <span style={{color: "green", fontWeight:"bold"}}>{items.recovered}</span></div>
+       <Container>
+       <div>
+        <div><strong>Last Updated:</strong> {date.toString()}</div>
+      <div><strong>Total Cases:</strong> <span style={{color: "	#CCCC00", fontWeight:"bold"}}>{items.cases}</span></div>
+  <div><strong>Total Deaths:</strong> <span style={{color: "red", fontWeight:"bold"}}>{items.deaths}</span></div>
+      <div><strong>Total Recovered:</strong> <span style={{color: "green", fontWeight:"bold"}}>{items.recovered}</span></div>
+        </div>
+       </Container>
       </div>
       );
     

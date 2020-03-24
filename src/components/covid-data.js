@@ -1,6 +1,6 @@
 import React from 'react';
 import CardCovid from './Table';
-import {Container, Table} from 'reactstrap'
+import {Container, Table, Navbar} from 'reactstrap'
 
 
 export default class CovidData extends React.Component {
@@ -48,8 +48,7 @@ export default class CovidData extends React.Component {
 
 
           <Container>
-
-          
+            <Navbar fixed dark>
             <Table bordered size="sm" hover>
             <thead>
               <tr>
@@ -78,6 +77,10 @@ export default class CovidData extends React.Component {
 
             ))}
           </Table>
+            </Navbar>
+
+          
+
           
 
 
