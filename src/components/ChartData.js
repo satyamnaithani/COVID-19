@@ -34,7 +34,7 @@ function MyChart() {
     return (
       <div
         style={{
-          width: '400px',
+          width: '900px',
           height: '300px'
         }}
       >

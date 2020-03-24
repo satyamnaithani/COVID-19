@@ -14,7 +14,7 @@ const ModalGraph = (props) => {
   return (
     <div>
       <div style={{textUnderlinePosition: "under", cursor: "pointer"}} onClick={toggle}>{countryName}</div>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
+      <Modal isOpen={modal} toggle={toggle} className={className} size='xl'>
         <ModalHeader toggle={toggle}>Graph Representation</ModalHeader>
         <ModalBody>
           <ChartData />
