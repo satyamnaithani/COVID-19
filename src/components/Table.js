@@ -1,4 +1,5 @@
 import React from 'react'
+import ModalGraph from './ModalGraph'
 
 
 const CovidData = (props) => {
@@ -25,7 +26,7 @@ const CovidData = (props) => {
       <th scope="row">{props.rank}</th>
       {/* <img src={props.flag} alt="flag" height="20px" width="40px"/>{' '} */}
       
-  <th scope="row">{props.country}</th>
+  <th scope="row"><ModalGraph countryName={props.country}></ModalGraph></th>
         <td>{props.cases}</td>
         <td><span style={{color: "#CCCC00"}}>+{props.todayCases}</span></td>
         <td>{props.deaths}</td>
