@@ -39,11 +39,11 @@ class Search extends Component {
                         const { items } = this.state;
 
                         alert(
-                            items.country + "    Cases   " +
+                            items.country + "    Cases: " +
 
-                            items.cases +  " Today Cases   " +
-                            items.todayCases + " Deaths   " +
-                            items.deaths + " Today Deaths   " +
+                            items.cases +  "    Today Cases: " +
+                            items.todayCases + "    Deaths: " +
+                            items.deaths + "    Today Deaths: " +
                             items.todayDeaths
                             
                             )
@@ -51,10 +51,8 @@ class Search extends Component {
                     });
                 },
                 (error) => {
-                    this.setState({
-                        isLoaded: true,
-                        error
-                    });
+                    
+                    alert("Enter a Valid Country or Check the spelling")
                 }
             )
 
@@ -62,9 +60,7 @@ class Search extends Component {
 
     }
     render() {
-        console.log(this.state.value)
-        console.log(this.state.items)
-        console.log(this.state.items.country)
+    
 
 
         return (
