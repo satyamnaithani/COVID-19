@@ -26,7 +26,7 @@ class Search extends Component {
     }
     handleSubmit(event) {
         event.preventDefault();
-        const url = "https://corona.lmao.ninja/countries/" + this.state.value;
+        const url = "https://corona.lmao.ninja/v2/countries/" + this.state.value;
         fetch(url)
             .then(res => res.json())
             .then(
