@@ -19,7 +19,7 @@ import Search from './Search'
   }
 
   componentDidMount() {
-    fetch("https://corona.lmao.ninja/all")
+    fetch("https://corona.lmao.ninja/v2/all")
       .then(res => res.json())
       .then(
         (result) => {
